@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to our Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #000;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 5px;
+            font-size: 16px;
+            width: 250px;
+            border: 1px solid #777;
+            border-radius: 3px;
+        }
+        .question {
+            font-weight: normal;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .options {
+            margin-bottom: 15px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        input[type="submit"] {
+            padding: 6px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #efefef;
+            border: 1px solid #777;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Subscribe to our Newsletter[cite: 1]</h2>
+
+    <form action="#" method="POST">
+        
+        <!-- First Name -->
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+        </div>
+
+        <!-- Newsletter Delivery Method (Radio Buttons) -->
+        <div class="form-group">
+            <span class="question">How would you like to recieve your newsletter?[cite: 1]</span>
+            <div class="options">
+                <label><input type="radio" name="delivery_method" value="post"> Post[cite: 1]</label>
+                <label><input type="radio" name="delivery_method" value="email"> E-mail[cite: 1]</label>
+                <label><input type="radio" name="delivery_method" value="singing_telegram"> Singing telegram[cite: 1]</label>
+            </div>
+        </div>
+
+        <!-- Newsletter Frequency (Checkboxes) -->
+        <div class="form-group">
+            <span class="question">How often do you wish to recieve your newletter?[cite: 1]</span>
+            <div class="options">
+                <label><input type="checkbox" name="frequency" value="daily"> daily[cite: 1]</label>
+                <label><input type="checkbox" name="frequency" value="weekly"> weekly[cite: 1]</label>
+                <label><input type="checkbox" name="frequency" value="monthly"> monthly[cite: 1]</label>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <input type="submit" value="Submit[cite: 1]">
+        </div>
+
+    </form>
+
+</body>
+</html>
